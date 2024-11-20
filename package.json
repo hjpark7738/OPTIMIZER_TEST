@@ -1,0 +1,32 @@
+{
+  "name": "optimizer_pc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.wellconn.optmizer.",
+    "productName": "OPTIMIZER_PC",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.0.2",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  }
+}

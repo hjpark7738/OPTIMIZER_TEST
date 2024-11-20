@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #F5F5F5;
+            color: #333;
+            font-size: 16px;
+            padding: 20px;
+        }
+        .container {
+            width: 600px;
+            border: 2px solid #333;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+        }
+        .header img {
+            width: 150px;
+        }
+        .header .icons {
+            display: flex;
+            gap: 10px;
+        }
+        .header .icons img {
+            width: 24px;
+            cursor: pointer;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00539F;
+            color: white;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+        .nav div {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+        .nav div.active {
+            background-color: #007ACC;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .content .box {
+            flex: 1;
+            border: 2px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .content .box .icon {
+            width: 80px;
+            height: 80px;
+            margin: 10px auto;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content .box h3 {
+            font-size: 1.2em;
+            color: #007ACC;
+            margin: 10px 0;
+        }
+        .content .box p {
+            font-size: 0.9em;
+            color: #555;
+            margin: 5px 0;
+        }
+        .button {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #007ACC;
+            background-color: transparent;
+            font-size: 1em;
+            color: #007ACC;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Optimizer Logo">
+            <div class="icons">
+                <img src="bell.png" alt="Notification Icon">
+                <img src="minimize.png" alt="Minimize Icon">
+                <img src="close.png" alt="Close Icon">
+            </div>
+        </div>
+        <div class="nav">
+            <div class="active">HOME</div>
+            <div>이력보기</div>
+            <div>문의하기</div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <p>이미지/동영상/텍스트/폰트</p>
+                <h3>최적화 하세요</h3>
+                <div class="icon">아이콘</div>
+                <p>현재상태 : 최적화 가능</p>
+                <p>대상서버 연결 상태 : <b>ON</b></p>
+                <button class="button">최적화 시작</button>
+            </div>
+            <div class="box">
+                <p>한글/워드/엑셀/PPT/PDF/ZIP</p>
+                <h3>최적화 하세요</h3>
+                <div class="icon">아이콘</div>
+                <p>현재상태 : 최적화 가능</p>
+                <p>대상서버 연결 상태 : <b>ON</b></p>
+                <button class="button">최적화 시작</button>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright WELLCONN, All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
